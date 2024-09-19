@@ -17,5 +17,5 @@ data = yf.download('AAPL', start='2010-01-01', end='2023-01-01')
 ```
 Descripción:
 
-Utilizamos yfinance para descargar datos históricos de la acción de Apple (AAPL) desde el 1 de enero de 2010 hasta el 1 de enero de 2023.
-El print(data.head()) está comentado, pero mostraría las primeras filas del conjunto de datos descargado.
+Utilizamos #yfinance para descargar datos históricos de la acción de Apple (#AAPL) desde el 1 de enero de 2010 hasta el 1 de enero de 2023.
+El ##print(data.head()) está comentado, pero mostraría las primeras filas del conjunto de datos descargado.
