@@ -12,8 +12,6 @@ import yfinance as yf
 # Descargamos datos históricos de una acción específica (ejemplo: Apple)
 data = yf.download('AAPL', start='2010-01-01', end='2023-01-01')
 
-# Mostramos las primeras filas del dataset
-#print(data.head())
 ```
 # Descripción:
 
