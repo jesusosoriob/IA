@@ -47,7 +47,7 @@ Esto es importante en modelos como LSTM, ya que ayuda a mejorar la eficiencia de
 import numpy as np
 
 def create_dataset(data, time_step=1):
-    X, y = []
+    X, y = [], []
     for i in range(len(data) - time_step - 1):
         X.append(data[i:(i + time_step), 0])
         y.append(data[i + time_step, 0])
@@ -65,7 +65,6 @@ X contiene los valores de entrada (historia de precios) y y contiene el valor ob
 ## 4. División del Conjunto de Datos en Entrenamiento y Prueba
 
 ```python
-from sklearn.model_selection import train_test_split
 
 # Dividimos los datos en conjunto de entrenamiento y prueba
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
@@ -80,10 +79,8 @@ Esto es esencial para evaluar el rendimiento del modelo y evitar el sobreajuste.
 
 ```python
 # reshape para el modelo de deep learning
+X = X.reshape((X.shape[0], X.shape[1], 1))
 
-# Reshape para LSTM
-X_train = X_train.reshape((X_train.shape[0], X_train.shape[1], 1))
-X_test = X_test.reshape((X_test.shape[0], X_test.shape[1], 1))
 ```
 
 # Descripción:
