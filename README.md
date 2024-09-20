@@ -19,3 +19,15 @@ data = yf.download('AAPL', start='2010-01-01', end='2023-01-01')
 
 Utilizamos yfinance para descargar datos históricos de la acción de Apple (#AAPL) desde el 1 de enero de 2010 hasta el 1 de enero de 2023.
 El print(data.head()) está comentado, pero mostraría las primeras filas del conjunto de datos descargado.
+
+# Normalización de los Datos
+
+```python
+from sklearn.preprocessing import MinMaxScaler
+
+# Normalizamos la columna 'Close'
+scaler = MinMaxScaler(feature_range=(0, 1))
+scaled_data = scaler.fit_transform(data['Close'].values.reshape(-1, 1))
+
+print(scaled_data[:5])  # Visualizamos los primeros 5 valores escalados
+```
