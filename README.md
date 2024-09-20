@@ -152,6 +152,9 @@ plt.show()
 Utilizamos el modelo entrenado para predecir los precios en el conjunto de prueba.
 Visualizamos los resultados utilizando matplotlib. Se grafica la serie de precios reales versus las predicciones del modelo para evaluar visualmente su desempeño.
 
+## Resultados obtenidos 
+![Figure_1](https://github.com/user-attachments/assets/2ea39a4a-906f-4651-8d57-6f3f68318996)
+
 ## Conclusión:
 
 Este notebook demuestra cómo construir y entrenar un modelo LSTM para la predicción de series temporales utilizando datos históricos de precios de acciones. El uso de LSTM es beneficioso para captar dependencias a largo plazo en los datos, como las series temporales financieras.
