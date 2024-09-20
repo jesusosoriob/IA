@@ -30,6 +30,9 @@ scaler = MinMaxScaler(feature_range=(0, 1))
 scaled_data = scaler.fit_transform(data['Close'].values.reshape(-1, 1))
 
 print(scaled_data[:5])  # Visualizamos los primeros 5 valores escalados
+
+#dividir los datos en conjunto de entrenamiento y prueba 
+from sklearn.model_selection import train_test_split
 ```
 # Descripción:
 
